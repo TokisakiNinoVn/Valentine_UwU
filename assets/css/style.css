@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 200px;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -13,7 +16,7 @@ body {
 #main {
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -72,3 +75,5 @@ body {
         transform: scale(1);
     }
 }
+
+
