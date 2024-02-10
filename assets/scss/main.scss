@@ -48,11 +48,17 @@
                         border-radius: 50%;
                         border: 7px double #ff00e6;
                     }
+
                     .more_infor {
                         display: flex;
-                        // .uwey, .weyq {
-                            
-                        // }
+                    }
+
+                    &:hover {
+                        background-size: 100% 100%;
+                        background-position: 0px 0px;
+                        background-image: linear-gradient(172deg, #FF00F8FF 0%, #71C4FFFF 100%);
+                        transform: scale(1.1);
+                        transition: all 0.3s;
                     }
                 }
                 .box_heart {

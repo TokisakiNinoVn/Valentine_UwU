@@ -47,6 +47,13 @@
 #main .main_box_content .uwyef .box_contents .char_box .more_infor {
   display: flex;
 }
+#main .main_box_content .uwyef .box_contents .char_box:hover {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(172deg, #ff00f8 0%, #71c4ff 100%);
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
 #main .main_box_content .uwyef .box_contents .box_heart {
   display: flex;
   justify-content: center;
