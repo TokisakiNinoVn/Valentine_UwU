@@ -79,4 +79,13 @@
   height: var(--xy);
   position: relative;
   animation: heartbeat 1s infinite;
+}
+#main .update_status {
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+  display: flex;
+}
+#main .update_status img {
+  width: 200px;
 }/*# sourceMappingURL=main.css.map */
