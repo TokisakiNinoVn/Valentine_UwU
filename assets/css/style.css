@@ -19,14 +19,6 @@ body {
     text-align: center;
 }
 
-#main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-}
-
 .wiue_bgr {
     height: 80vh;
     width: 100%;
