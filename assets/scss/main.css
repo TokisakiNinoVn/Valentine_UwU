@@ -2,5 +2,60 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+#main .wiue_bgr {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+#main .wiue_bgr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(4px);
+}
+#main .main_box_content {
+  height: 40vh;
+  display: flex;
   justify-content: center;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(90deg, #ff00f8 0%, #71c4ff 100%);
+}
+#main .main_box_content .uwyef {
+  width: 50vw;
+  position: relative;
+}
+#main .main_box_content .uwyef .box_contents {
+  position: absolute;
+  top: -100px;
+  display: flex;
+}
+#main .main_box_content .uwyef .box_contents .char_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+#main .main_box_content .uwyef .box_contents .char_box img.img_for_char {
+  width: 200px;
+  border-radius: 50%;
+  border: 7px double #ff00e6;
+}
+#main .main_box_content .uwyef .box_contents .char_box .more_infor {
+  display: flex;
+}
+#main .main_box_content .uwyef .box_contents .box_heart {
+  display: flex;
+  justify-content: center;
+}
+#main .main_box_content .uwyef .box_contents .box_heart .heart {
+  --xy: 300px;
+  width: var(--xy);
+  height: var(--xy);
+  position: relative;
+  animation: heartbeat 1s infinite;
 }/*# sourceMappingURL=main.css.map */
