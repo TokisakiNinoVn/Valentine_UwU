@@ -16,7 +16,45 @@
             filter: blur(1px);
         }
 
-        
+        .qywhd {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            padding: 10px;
+            border-radius: 10px;
+            border: 5px dotted black;
+            width: 450px;
+            height: 150px;
+            // overflow: hidden;
+            
+            .snbe {
+                // overflow: hidden;
+                background-color: antiquewhite;
+                padding: 10px;
+                border-radius: 10px;
+                border: 5px solid black;
+
+                .wieuf_time_count {
+                    position: relative;
+                    display: flex;
+
+                    .total_days {
+                        font-size: 40px;
+                    }
+                    .ymdw_time {
+                        ul {
+                            display: flex;
+                        }
+                    }
+                    .day_start {
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .main_box_content {

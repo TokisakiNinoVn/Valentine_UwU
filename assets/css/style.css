@@ -15,7 +15,9 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
-
+ul, li {
+    list-style: none;
+}
 .active {
     display: flex !important;
 }

@@ -16,6 +16,36 @@
      object-fit: cover;
   filter: blur(1px);
 }
+#main .wiue_bgr .qywhd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px dotted black;
+  width: 450px;
+  height: 150px;
+}
+#main .wiue_bgr .qywhd .snbe {
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count {
+  position: relative;
+  display: flex;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .total_days {
+  font-size: 40px;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .ymdw_time ul {
+  display: flex;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .day_start span {
+  font-size: 30px;
+}
 #main .main_box_content {
   height: 40vh;
   display: flex;
