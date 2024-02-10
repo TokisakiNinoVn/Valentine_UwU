@@ -143,6 +143,7 @@
   background-color: aliceblue;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 320px;
 }
 #main .main_box_content .uwyef .box_contents .char_box:hover {
   background-size: 100% 100%;
@@ -179,6 +180,7 @@
 #main .main_box_content .uwyef .box_contents .box_heart {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 #main .main_box_content .uwyef .box_contents .box_heart .heart {
   --xy: 300px;
@@ -186,6 +188,9 @@
   height: var(--xy);
   position: relative;
   animation: heartbeat 1s infinite;
+}
+#main .main_box_content .uwyef .box_contents .box_heart .real_time_ {
+  height: 100px;
 }
 #main .update_status {
   position: fixed;

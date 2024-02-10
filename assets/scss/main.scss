@@ -164,6 +164,7 @@
                     background-color: aliceblue;
                     border-radius: 10px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    height: 320px;
                     
                     &:hover {
                         background-size: 100% 100%;
@@ -208,6 +209,7 @@
                 .box_heart {
                     display: flex;
                     justify-content: center;
+                    flex-direction: column;
     
                     .heart {
                         --xy: 300px;
@@ -215,6 +217,9 @@
                         height:  var(--xy);
                         position: relative;
                         animation: heartbeat 1s infinite;
+                    }
+                    .real_time_ {
+                        height: 100px;
                     }
                 }
             }

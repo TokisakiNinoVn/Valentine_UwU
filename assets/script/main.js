@@ -68,5 +68,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const ageYu = document.querySelector('.age_yu');
     ageYu.innerHTML = tuoi;
     
+
 })
+function hienThiNgayGio() {
+    var now = new Date(); // Lấy ngày giờ hiện tại
+    var ngay = now.getDate();
+    var thang = now.getMonth() + 1;
+    var nam = now.getFullYear();
+    var gio = now.getHours();
+    var phut = now.getMinutes();
+    var giay = now.getSeconds();
+
+    // Định dạng ngày giờ
+    var ngayGio = ngay + '/' + thang + '/' + nam + ' ' + gio + ':' + phut + ':' + giay;
+
+    // Hiển thị lên phần tử có id="ngaygio"
+    document.querySelector('.real_time').innerHTML = ngayGio;
+
+    // Cập nhật mỗi giây
+}
+setTimeout(hienThiNgayGio, 1000);
 
