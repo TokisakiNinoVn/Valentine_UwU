@@ -24,43 +24,72 @@
             padding: 10px;
             border-radius: 10px;
             border: 5px dotted black;
-            width: 450px;
+            width: 550px;
             height: 150px;
             // overflow: hidden;
             
             .snbe {
-                // overflow: hidden;
-                background-color: antiquewhite;
-                padding: 10px;
+                // background-color: antiquewhite;
+                height: 100%;
                 border-radius: 10px;
                 border: 2px solid black;
                 --xy: 100%;
                 width: var(--xy);
-                height: var(--xy);
-                // display: flex;
-                // align-items: center;
+                height: 100%;
+                display: flex;
+                overflow-y: scroll;
+                align-content: flex-start;
+                flex-wrap: wrap;
                 
                 .wieuf_time_count {
+                    position: relative;
                     display: flex;
                     align-items: center;
-                    position: relative;
+                    flex-direction: column;
                     width: 100%;
-                    height: 100%;
-                    background-color: aquamarine;
+                    background-size: 100% 100%;
+                    background-position: 0px 0px;
+                    background-image: linear-gradient(90deg, #EF00FFFF 0%, #71C4FFFF 100%);
 
+                    .banner_ {
+                        height: 120px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: bold;
+
+                    }
                     .total_days {
                         font-size: 40px;
-                        width: 400px;
-                        background-color: beige;
+                        // margin-top: 5px;
                     }
                     .ymdw_time {
-                        background-color: azure;
                         ul {
                             display: flex;
+
+                            li {
+                                font-size: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                margin-right: 10px;
+                                background-color: azure;
+                                padding: 5px;
+                                border-radius: 6px;
+                                --xy: 80px;
+                                height: var(--xy);
+                                width: var(--xy);
+                                border: 1px solid black;
+
+                                .iweui {
+                                    font-size: 24px;
+                                }
+                            }
                         }
                     }
                     .day_start {
-                        background-color: aqua;
+                        // margin-bottom: 10px;
                         span {
                             font-size: 30px;
                         }
@@ -75,6 +104,9 @@
 
                         &:hover {
                             background-color: aquamarine;
+                            transform: scale(1.05);
+                            transition: all 0.3s;
+                            z-index: 100;
                         }
                     }
                     .icon_left {
@@ -132,15 +164,14 @@
 
                     .name_char {
                         margin: 10px auto;
+                        font-size: 20px;
+                        font-weight: bold;
                     }
 
                     .more_infor {
                         display: flex;
                         align-items: center;
 
-                        // span {
-
-                        // }
                         .uwey, .weyq {
                             display: flex;
                             align-items: center;

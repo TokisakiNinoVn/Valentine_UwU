@@ -24,39 +24,61 @@
   padding: 10px;
   border-radius: 10px;
   border: 5px dotted black;
-  width: 450px;
+  width: 550px;
   height: 150px;
 }
 #main .wiue_bgr .qywhd .snbe {
-  background-color: antiquewhite;
-  padding: 10px;
+  height: 100%;
   border-radius: 10px;
   border: 2px solid black;
   --xy: 100%;
   width: var(--xy);
-  height: var(--xy);
+  height: 100%;
+  display: flex;
+  overflow-y: scroll;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  background-color: aquamarine;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(90deg, #ef00ff 0%, #71c4ff 100%);
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .banner_ {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .total_days {
   font-size: 40px;
-  width: 400px;
-  background-color: beige;
-}
-#main .wiue_bgr .qywhd .snbe .wieuf_time_count .ymdw_time {
-  background-color: azure;
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .ymdw_time ul {
   display: flex;
 }
-#main .wiue_bgr .qywhd .snbe .wieuf_time_count .day_start {
-  background-color: aqua;
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .ymdw_time ul li {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: azure;
+  padding: 5px;
+  border-radius: 6px;
+  --xy: 80px;
+  height: var(--xy);
+  width: var(--xy);
+  border: 1px solid black;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .ymdw_time ul li .iweui {
+  font-size: 24px;
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .day_start span {
   font-size: 30px;
@@ -70,6 +92,9 @@
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .icon_banner:hover {
   background-color: aquamarine;
+  transform: scale(1.05);
+  transition: all 0.3s;
+  z-index: 100;
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .icon_left {
   left: -30px;
@@ -115,6 +140,8 @@
 }
 #main .main_box_content .uwyef .box_contents .char_box .name_char {
   margin: 10px auto;
+  font-size: 20px;
+  font-weight: bold;
 }
 #main .main_box_content .uwyef .box_contents .char_box .more_infor {
   display: flex;

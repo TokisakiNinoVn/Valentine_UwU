@@ -12,34 +12,37 @@ function toggleElement() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    const totalDay = document.querySelector('.alert_day')
+    const viewYear = document.querySelector('.year_value')
+    const viewMonth = document.querySelector('.month_value')
+    const viewWeek = document.querySelector('.week_value')
+    const viewDay = document.querySelector('.day_value')
+    function countDays() {
+        // Ngày bắt đầu
+        var startDate = new Date('2023-11-24');
+        
+        // Ngày hiện tại
+        var currentDate = new Date();
+        
+        // Tính số ngày kể từ ngày bắt đầu
+        var timeDiff = currentDate.getTime() - startDate.getTime();
+        var daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+        
+        // Tính số năm, tháng, ngày, và tuần
+        var years = Math.floor(daysDiff / 365);
+        var months = Math.floor((daysDiff % 365) / 30);
+        var days = daysDiff % 30;
+        var weeks = Math.floor(daysDiff / 7);
+
+        totalDay.innerHTML = daysDiff
+        viewYear.innerHTML = years
+        viewMonth.innerHTML = months
+        viewWeek.innerHTML = weeks
+        viewDay.innerHTML = days
+    }
+    
+    // Gọi hàm để tính và hiển thị kết quả
+    countDays();
 
 })
 
-
-function countDays() {
-    // Ngày bắt đầu
-    var startDate = new Date('2023-11-24');
-    
-    // Ngày hiện tại
-    var currentDate = new Date();
-    
-    // Tính số ngày kể từ ngày bắt đầu
-    var timeDiff = currentDate.getTime() - startDate.getTime();
-    var daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
-    
-    // Tính số năm, tháng, ngày, và tuần
-    var years = Math.floor(daysDiff / 365);
-    var months = Math.floor((daysDiff % 365) / 30);
-    var days = daysDiff % 30;
-    var weeks = Math.floor(daysDiff / 7);
-    
-    // Hiển thị kết quả
-    var resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = "<p>Số năm: " + years + "</p>";
-    resultDiv.innerHTML += "<p>Số tháng: " + months + "</p>";
-    resultDiv.innerHTML += "<p>Số ngày: " + days + "</p>";
-    resultDiv.innerHTML += "<p>Số tuần: " + weeks + "</p>";
-}
-
-// Gọi hàm để tính và hiển thị kết quả
-countDays();
