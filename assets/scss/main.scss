@@ -50,7 +50,29 @@
                     background-size: 100% 100%;
                     background-position: 0px 0px;
                     background-image: linear-gradient(90deg, #EF00FFFF 0%, #71C4FFFF 100%);
+                    animation: slide_ 20s infinite alternate;;
 
+                    img {
+                        width: 200px;
+                        // height: 50px;
+                        // border-radius: 50%;
+                        // border: 3px solid #fff;
+                        // box-shadow: 0px 0px 10px 0px #000;
+                    }
+                    @keyframes slide_ {
+                        0% {
+                            transform: translateY(0); /* Ảnh dịch chuyển đến phần cuối container, với 300px bị ẩn bên ngoài */
+                        }
+                        33% {
+                            transform: translateY(-120px); 
+                        }
+                        66% {
+                            transform: translateY(-240px); 
+                        }
+                        100% {
+                            transform: translateY(0); /* Ảnh bắt đầu từ vị trí ban đầu */
+                        }
+                    }
                     .banner_ {
                         height: 120px;
                         width: 100%;

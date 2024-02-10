@@ -48,6 +48,24 @@
   background-size: 100% 100%;
   background-position: 0px 0px;
   background-image: linear-gradient(90deg, #ef00ff 0%, #71c4ff 100%);
+  animation: slide_ 20s infinite alternate;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count img {
+  width: 200px;
+}
+@keyframes slide_ {
+  0% {
+    transform: translateY(0); /* Ảnh dịch chuyển đến phần cuối container, với 300px bị ẩn bên ngoài */
+  }
+  33% {
+    transform: translateY(-120px);
+  }
+  66% {
+    transform: translateY(-240px);
+  }
+  100% {
+    transform: translateY(0); /* Ảnh bắt đầu từ vị trí ban đầu */
+  }
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .banner_ {
   height: 120px;
