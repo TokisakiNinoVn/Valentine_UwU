@@ -31,20 +31,51 @@
   background-color: antiquewhite;
   padding: 10px;
   border-radius: 10px;
-  border: 5px solid black;
+  border: 2px solid black;
+  --xy: 100%;
+  width: var(--xy);
+  height: var(--xy);
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count {
-  position: relative;
   display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .total_days {
   font-size: 40px;
+  width: 400px;
+  background-color: beige;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .ymdw_time {
+  background-color: azure;
 }
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .ymdw_time ul {
   display: flex;
 }
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .day_start {
+  background-color: aqua;
+}
 #main .wiue_bgr .qywhd .snbe .wieuf_time_count .day_start span {
   font-size: 30px;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .icon_banner {
+  position: absolute;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .icon_banner:hover {
+  background-color: aquamarine;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .icon_left {
+  left: -30px;
+}
+#main .wiue_bgr .qywhd .snbe .wieuf_time_count .icon_right {
+  right: -30px;
 }
 #main .main_box_content {
   height: 40vh;

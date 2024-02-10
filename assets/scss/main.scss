@@ -33,24 +33,56 @@
                 background-color: antiquewhite;
                 padding: 10px;
                 border-radius: 10px;
-                border: 5px solid black;
-
+                border: 2px solid black;
+                --xy: 100%;
+                width: var(--xy);
+                height: var(--xy);
+                // display: flex;
+                // align-items: center;
+                
                 .wieuf_time_count {
-                    position: relative;
                     display: flex;
+                    align-items: center;
+                    position: relative;
+                    // display: flex;
+                    width: 100%;
+                    height: 100%;
+                    background-color: aquamarine;
 
                     .total_days {
                         font-size: 40px;
+                        width: 400px;
+                        background-color: beige;
                     }
                     .ymdw_time {
+                        background-color: azure;
                         ul {
                             display: flex;
                         }
                     }
                     .day_start {
+                        background-color: aqua;
                         span {
                             font-size: 30px;
                         }
+                    }
+
+                    .icon_banner {
+                        position: absolute;
+                        font-size: 30px;
+                        padding: 10px;
+                        border-radius: 50%;
+                        background-color: aliceblue;
+
+                        &:hover {
+                            background-color: aquamarine;
+                        }
+                    }
+                    .icon_left {
+                        left: -30px;
+                    }
+                    .icon_right {
+                        right: -30px;
                     }
                 }
             }
