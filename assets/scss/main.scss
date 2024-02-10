@@ -104,9 +104,11 @@
 
     .update_status {
         position: fixed;
-        bottom: 20px;
+        z-index: 99;
+        top: 20px;
         left: 40px;
         display: flex;
+        animation: slide 2s infinite alternate;;
 
         img {
             width: 200px;
@@ -114,6 +116,49 @@
             // border-radius: 50%;
             // border: 3px solid #fff;
             // box-shadow: 0px 0px 10px 0px #000;
+        }
+        @keyframes slide {
+            0% {
+              transform: translateY(0); /* Ảnh bắt đầu từ vị trí ban đầu */
+            }
+            100% {
+              transform: translateY(calc(30% - 40px)); /* Ảnh dịch chuyển đến phần cuối container, với 300px bị ẩn bên ngoài */
+            }
+        }
+        .wefui {
+            margin-top: 20px;
+            width: 300px;
+            height: 140px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #000;
+
+            .wieh_contents {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .title_status {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+            }
+            .wieh_contents::after {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -40px;
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 20px solid rgb(168, 144, 144);
+                transform: rotate(-90deg);
+                // background-color: #000;
+                margin: 10px 0;
+            }
         }
     }
 }

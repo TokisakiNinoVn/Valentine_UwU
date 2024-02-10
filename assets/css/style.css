@@ -16,7 +16,14 @@ body {
     text-align: center;
 }
 
-
+.active {
+    display: flex !important;
+}
+.hidden {
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+}
 .heart:before,
 .heart:after {
     content: "";

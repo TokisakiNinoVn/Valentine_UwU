@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #main {
   height: 100vh;
   display: flex;
@@ -82,10 +83,52 @@
 }
 #main .update_status {
   position: fixed;
-  bottom: 20px;
+  z-index: 99;
+  top: 20px;
   left: 40px;
   display: flex;
+  animation: slide 2s infinite alternate;
 }
 #main .update_status img {
   width: 200px;
+}
+@keyframes slide {
+  0% {
+    transform: translateY(0); /* Ảnh bắt đầu từ vị trí ban đầu */
+  }
+  100% {
+    transform: translateY(calc(30% - 40px)); /* Ảnh dịch chuyển đến phần cuối container, với 300px bị ẩn bên ngoài */
+  }
+}
+#main .update_status .wefui {
+  margin-top: 20px;
+  width: 300px;
+  height: 140px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+#main .update_status .wefui .wieh_contents {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#main .update_status .wefui .wieh_contents .title_status {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#main .update_status .wefui .wieh_contents::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -40px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgb(168, 144, 144);
+  transform: rotate(-90deg);
+  margin: 10px 0;
 }/*# sourceMappingURL=main.css.map */
