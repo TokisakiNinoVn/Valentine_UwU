@@ -58,7 +58,6 @@ body {
 } */
 
 .inner-header {
-    /* background-color: bisque; */
     height: 65vh;
     /* width: 100%; */
     /* position: absolute; */
@@ -72,6 +71,9 @@ body {
     z-index: 2;
 } */
 .for_wave {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
     z-index: 5;
 }
 .waves {
@@ -83,8 +85,6 @@ body {
     max-height: 150px;
 }
 
-
-/* Animation */
 
 .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;

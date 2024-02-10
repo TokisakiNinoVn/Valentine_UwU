@@ -20,10 +20,10 @@
         height: 40vh;
         display: flex;
         justify-content: center;
-        background-size: 100% 100%;
-        background-position: 0px 0px;
-        background-image: linear-gradient(90deg, #FF00F8FF 0%, #71C4FFFF 100%);
-        // z-index: 11;
+        // background-size: 100% 100%;
+        // background-position: 0px 0px;
+        // background-image: linear-gradient(90deg, #FF00F8FF 0%, #71C4FFFF 100%);
+        z-index: 11;
 
         .uwyef {
             width: 50vw;
@@ -41,6 +41,7 @@
                     padding: 10px 20px;
                     background-color: aliceblue;
                     border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
                     img.img_for_char {
                         width: 200px;

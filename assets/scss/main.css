@@ -19,9 +19,7 @@
   height: 40vh;
   display: flex;
   justify-content: center;
-  background-size: 100% 100%;
-  background-position: 0px 0px;
-  background-image: linear-gradient(90deg, #ff00f8 0%, #71c4ff 100%);
+  z-index: 11;
 }
 #main .main_box_content .uwyef {
   width: 50vw;
@@ -39,6 +37,7 @@
   padding: 10px 20px;
   background-color: aliceblue;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #main .main_box_content .uwyef .box_contents .char_box img.img_for_char {
   width: 200px;
