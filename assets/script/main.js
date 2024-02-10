@@ -44,5 +44,29 @@ document.addEventListener("DOMContentLoaded", () => {
     // Gọi hàm để tính và hiển thị kết quả
     countDays();
 
+
+    function tinhTuoi(ngaySinh) {
+        var ngaySinhArray = ngaySinh.split('-');
+        var ngay = parseInt(ngaySinhArray[2]);
+        var thang = parseInt(ngaySinhArray[1]);
+        var nam = parseInt(ngaySinhArray[0]);
+    
+        var ngayHienTai = new Date();
+        var namHienTai = ngayHienTai.getFullYear();
+        var thangHienTai = ngayHienTai.getMonth() + 1;
+        var ngayHienTai = ngayHienTai.getDate();
+    
+        var tuoi = namHienTai - nam;
+        if (thangHienTai < thang || (thangHienTai === thang && ngayHienTai < ngay)) {
+            tuoi--;
+        }
+        return tuoi;
+    }
+    
+    var ngaySinh = "2005-07-14";
+    var tuoi = tinhTuoi(ngaySinh);
+    const ageYu = document.querySelector('.age_yu');
+    ageYu.innerHTML = tuoi;
+    
 })
 
