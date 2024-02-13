@@ -450,3 +450,38 @@ img.img_for_char {
         width: 100vw;
     }
 }
+@media (max-width: 425px) {
+    .more_infor {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 376px) {
+    .char_box {
+        font-size: 12px;
+        height: 220px;
+    }
+    .box_heart {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 150px;
+    }
+
+    img.img_for_char {
+        width: 80px;
+    }
+    .update_status {
+        display: none;
+    }
+    .uwey, .weyq { 
+        padding: 3px 5px;
+    }
+    .name_char {
+        font-size: 14px;
+    }
+    .uwey {
+        margin-bottom: 4px;
+    }
+}
