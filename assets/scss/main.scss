@@ -1,3 +1,4 @@
+
 #main {
     height: 100vh;
     display: flex;
@@ -5,7 +6,7 @@
     // justify-content: center;
 
     .wiue_bgr {
-        height: 60vh;
+        height: 57vh;
         width: 100%;
         position: relative;
 
@@ -139,21 +140,20 @@
     }
 
     .main_box_content {
-        height: 40vh;
+        height: 43vh;
         display: flex;
         justify-content: center;
-        // background-size: 100% 100%;
-        // background-position: 0px 0px;
-        // background-image: linear-gradient(90deg, #FF00F8FF 0%, #71C4FFFF 100%);
         z-index: 11;
-
+        
         .uwyef {
+            display: flex;
+            justify-content: center;
             width: 50vw;
             position: relative;
 
             .box_contents {
-                position: absolute;
-                top: -100px;
+                // position: absolute;
+                // top: -100px;
                 display: flex;
     
                 .char_box {
@@ -164,19 +164,18 @@
                     background-color: aliceblue;
                     border-radius: 10px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                    height: 320px;
+                    height: 280px;
                     
                     &:hover {
                         background-size: 100% 100%;
                         background-position: 0px 0px;
                         background-image: linear-gradient(172deg, #FF00F8FF 0%, #71C4FFFF 100%);
                         box-shadow: rgba(252, 21, 117, 0.916) 0px 5px 15px;
-                        // transform: scale(1.1);
                         transition: all 0.3s;
                     }
 
                     img.img_for_char {
-                        width: 200px;
+                        width: 180px;
                         border-radius: 50%;
                         border: 7px double rgb(255, 0, 230);
                     }
@@ -203,13 +202,13 @@
                             margin-right: 7px;
                         }
                     }
-
-
                 }
+
                 .box_heart {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
+                    height: 300px;
     
                     .heart {
                         --xy: 300px;
@@ -285,6 +284,21 @@
                 // background-color: #000;
                 margin: 10px 0;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .char_box {
+        padding: 0;
+        background-color: unset;
+
+        &:hover {
+            background-size: 100% 100%;
+            background-position: 0px 0px;
+            background-image: linear-gradient(172deg, #FF00F8FF 0%, #71C4FFFF 100%);
+            box-shadow: rgba(252, 21, 117, 0.916) 0px 5px 15px;
+            transition: all 0.3s;
         }
     }
 }
