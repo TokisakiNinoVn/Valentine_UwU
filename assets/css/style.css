@@ -429,13 +429,20 @@ img.img_for_char {
 }
 
 @media (max-width: 610px) {
-
     img.img_for_char {
         width: 130px;
     }
 
     .qywhd {
         width: 100vw;
+    }
+}
+
+@media (max-width: 535px) {
+    .banner_ ul li {
+        font-size: 13px;
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -475,6 +482,10 @@ img.img_for_char {
     .alert_totalday2 {
         font-size: 30px;
     }
+    
+    .uwey {
+        margin-bottom: 4px;
+    }
 }
 
 @media (max-width: 376px) {
@@ -500,8 +511,5 @@ img.img_for_char {
     }
     .name_char {
         font-size: 14px;
-    }
-    .uwey {
-        margin-bottom: 4px;
     }
 }
