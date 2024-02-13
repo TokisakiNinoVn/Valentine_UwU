@@ -54,9 +54,10 @@ img.bgr_img {
     transform: translate(-50%, -50%); 
     padding: 10px;
     border-radius: 10px;
-    border: 5px dotted black;
+    border: 5px double rgba(0, 0, 0, 0.416);
     width: 550px;
     height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .snbe {
@@ -178,10 +179,10 @@ img.bgr_img {
     position: relative;
 }
 .box_contents {
-    /* // position: absolute;
-    // top: -100px; */
     display: flex;
+    justify-content: center;
 }
+
 .char_box {
     display: flex;
     flex-direction: column;
@@ -193,7 +194,6 @@ img.bgr_img {
     height: 280px;
     
 }
-
 .char_box:hover {
     background-size: 100% 100%;
     background-position: 0px 0px;
@@ -235,7 +235,7 @@ img.img_for_char {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 300px;
+    /* height: 300px; */
 }
 .heart {
     --xy: 300px;
@@ -309,17 +309,6 @@ img.img_for_char {
     margin: 10px 0;
 }
 
-@media (max-width: 768px) {
-    .char_box, .char_box:hover {
-        padding: 0;
-        background-color: unset;
-        box-shadow: unset;
-    }
-    
-    img.img_for_char {
-        width: 130px;
-    }
-}
 
 
 
@@ -413,15 +402,51 @@ img.img_for_char {
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
     .waves {
-        height:40px;
-        min-height:40px;
+        height: 40px;
+        min-height: 40px;
     }
     .content {
-        height:30vh;
+        height: 30vh;
     }
-    h1 {
-        font-size:24px;
+
+    .char_box, .char_box:hover {
+        padding: 0;
+        background-color: unset;
+        box-shadow: unset;
+    }
+
+    img.img_for_char {
+        width: 130px;
+        border: 2px solid pink;
+    }
+
+    .heart {
+        --xy: 100px;
+        width: var(--xy);
+        height:  var(--xy);
+    }
+
+    .heart:before,
+    .heart:after {
+        width: 40px;
+        height: 60px;
+    }
+
+    .heart:before {
+        left: 5px;
     }
 }
 
+@media (max-width: 610px) {
+    * {
+        font-size: 14px;
+    }
 
+    img.img_for_char {
+        width: 130px;
+    }
+
+    .qywhd {
+        width: 100vw;
+    }
+}
