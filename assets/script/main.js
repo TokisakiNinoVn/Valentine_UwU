@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const viewMonth = document.querySelector('.month_value')
     const viewWeek = document.querySelector('.week_value')
     const viewDay = document.querySelector('.day_value')
+
+    const totalDays = document.querySelector('.alert_totalday2')
     function countDays() {
         // Ngày bắt đầu
         var startDate = new Date('2023-11-24');
@@ -39,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         viewMonth.innerHTML = months
         viewWeek.innerHTML = weeks
         viewDay.innerHTML = days
+        totalDays.innerHTML = daysDiff + " Days🍀"
     }
     
     // Gọi hàm để tính và hiển thị kết quả

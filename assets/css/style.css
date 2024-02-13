@@ -117,7 +117,9 @@ img.bgr_img {
     font-size: 40px;
     /* margin-top: 5px; */
 }
-
+.total_days2 {
+    display: none;
+}
 
 .ymdw_time ul {
     display: flex;
@@ -312,17 +314,6 @@ img.img_for_char {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .heart:before,
 .heart:after {
     content: "";
@@ -438,9 +429,6 @@ img.img_for_char {
 }
 
 @media (max-width: 610px) {
-    * {
-        font-size: 14px;
-    }
 
     img.img_for_char {
         width: 130px;
@@ -450,10 +438,42 @@ img.img_for_char {
         width: 100vw;
     }
 }
+
 @media (max-width: 425px) {
+    .wieuf_time_count {
+        animation: none;
+        background-size: 100% 100%;
+        background-position: 0px 0px;
+        background-image: linear-gradient(0deg, rgba(238, 0, 255, 0.59),  rgba(102, 249, 236, 0.552));
+    }
+    .total_days, .ymdw_time, .day_start {
+        display: none;
+    }
+    .qywhd {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .update_status {
+        display: none;
+    }
     .more_infor {
         display: flex;
         flex-direction: column;
+    }
+    .snbe {
+        border: unset;
+        border-radius: 50%;
+    }
+
+    .total_days2 {
+        display: block;
+        height: 220px;
+        display: flex;
+    }
+
+    .alert_totalday2 {
+        font-size: 30px;
     }
 }
 
