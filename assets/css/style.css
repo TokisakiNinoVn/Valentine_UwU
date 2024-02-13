@@ -438,6 +438,20 @@ img.img_for_char {
     }
 }
 
+@media (max-width: 561px) {
+    .update_status {
+        left: 0px;
+    }
+    .update_status img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wefui {
+        width: 250px;
+    }
+}
+
 @media (max-width: 535px) {
     .banner_ ul li {
         font-size: 13px;
@@ -461,9 +475,7 @@ img.img_for_char {
         height: 250px;
         border-radius: 50%;
     }
-    .update_status {
-        display: none;
-    }
+
     .more_infor {
         display: flex;
         flex-direction: column;
@@ -482,7 +494,7 @@ img.img_for_char {
     .alert_totalday2 {
         font-size: 30px;
     }
-    
+
     .uwey {
         margin-bottom: 4px;
     }
@@ -503,13 +515,16 @@ img.img_for_char {
     img.img_for_char {
         width: 80px;
     }
-    .update_status {
-        display: none;
-    }
+
     .uwey, .weyq { 
         padding: 3px 5px;
     }
     .name_char {
         font-size: 14px;
+    }
+}
+@media (max-width: 321px) {
+    .wefui {
+        width: 200px;
     }
 }
