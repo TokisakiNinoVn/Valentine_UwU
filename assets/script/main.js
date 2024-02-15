@@ -1,6 +1,6 @@
-window.onload = function() {
-    setInterval(toggleElement, 6000); // Gọi hàm toggleElement sau mỗi 5 giây
-};
+// window.onload = function() {
+//     setInterval(toggleElement, 6000); // Gọi hàm toggleElement sau mỗi 5 giây
+// };
 
 function toggleElement() {
     var element = document.querySelector(".update_status");
@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     // Gọi hàm để tính và hiển thị kết quả
-    countDays();
+    // countDays();
+    setInterval(countDays(), 100000);
 
 
     function tinhTuoi(ngaySinh) {
@@ -92,3 +93,25 @@ function hienThiNgayGio() {
 }
 setTimeout(hienThiNgayGio, 1000);
 
+
+// Ban F12
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+document.addEventListener("keydown", function(e) {
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) {
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    //alert('>> Tokisaki Nino: "Say no to "Inspect" website!" ');
+});
+
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'F12' || event.keyCode === 123) {
+      //alert('Access to website source code is not allowed!');
+    event.preventDefault();
+    }
+});
